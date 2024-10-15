@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/reset.css">
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/apple-touch-icon-precomposed.png" sizes="180x180">
     <title>Connexion | Mailchimp</title>
 </head>
 <body>
@@ -15,13 +16,31 @@
                 <header>
                     <img src="./images/mc-freddie-dark.svg" alt="">
                 </header>
+
+                <div class="langue">
+                    <div class="image">
+                        <img src="./images/globe.svg" alt="langues">
+                    </div>
+                    <div class="dropDown">
+                        <select name="languesSelection" id="languesSelection">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="pt-br">Português</option>
+                            <option value="it">Italiano</option>
+                            <option value="de">Deutsch</option>
+                            <option value="fr" selected>Français</option>
+                        </select>
+                    </div>
+                    
+                </div>
             </div>
+
             <div class="bottom">
                 <div class="formDiv">
                     <form class="login" action="">
                         <h1>Connexion</h1>
                         <div class="createAccountLink">
-                            <span>Vous avez besoin d'un compte MailChimp ?</span>
+                            <span>Vous avez besoin d'un compte mailchimp ?</span>
                             <a href="#">Créez un compte</a>
                         </div>
                         <div class="in">
@@ -42,12 +61,13 @@
                             <input type="password" id="password">
                         </div>
     
-                        <div class="checkB">
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <label for="checkbox">Rester connecté</label>
+                        <div class="checkB" id="checkBCheckbox">
+                            <input class="dojoxTriStateCheckBoxInput" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="labelCheckBox" for="checkbox">Rester connecté</label>
                         </div>
+
                         <div class="leftButton">
-                            <button type="button">Connexion</button>
+                            <button class="buttonConnexion" type="button">Connexion</button>
                         </div>
                         <div class="links">
                             <a href="#">
@@ -62,8 +82,24 @@
                                 <span class="textLink">Probleme de connexion ?</span>
                             </a>
                         </div>
+                        <div class="bottomDiv">
+                            <div class="messageForGoogle">
+                                <span>
+                                     Ou, si vous avez créé votre compte Mailchimp avec Google :
+                                </span>
+                             </div>
+                             <div class="googleButton">
+                                 <button>
+                                     <img src="./images/appointments-google-logo.svg" alt="">
+                                     <span>Continuer avec Google</span>
+                                 </button>
+                             </div>
+                        </div>
                     </form>
                 </div>
+                <footer>
+                    <p class="footerText">©2024 Intuit Inc. Tous droits réservés. Mailchimp® est une marque déposée de The Rocket Science Group, <a class="lienFooter" href="#">Préférences en matière de cookies</a>, <a class="lienFooter" href="#">Confidentialité et Conditions générales</a></p>
+                </footer>
             </div>
         </div>
     </div>
