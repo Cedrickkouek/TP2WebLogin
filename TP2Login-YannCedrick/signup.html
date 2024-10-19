@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/reset.css">
-    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/signup.css">
     <link rel="icon" type="image/x-icon" href="./images/apple-touch-icon-precomposed.png" sizes="180x180">
-    <title>Connexion | Mailchimp</title>
+    <title>Inscription | Mailchimp</title>
 </head>
 <body>
     <div class="content">
@@ -38,14 +38,19 @@
             <div class="bottom">
                 <div class="formDiv">
                     <form class="login">
-                        <h1>Connexion</h1>
+                        <h1>Inscrivez-vous à Mailchimp</h1>
                         <div class="createAccountLink">
-                            <span>Vous avez besoin d'un compte mailchimp ?</span>
-                            <a href="./signup.html" target="_parent">Créez un compte</a>
+                            <span> Créez un compte gratuitement ou </span>
+                            <a href="./index.html">connectez-vous</a>
                         </div>
                         <div class="in">
-                            <label class="labelEmail" for="nomUtilisateur">Nom d'utilisateur ou adresse e-mail</label>
-                            <input type="email" id="nomUtilisateur">
+                            <label class="labelEmail" for="adresseEmail">Adresse e-mail professionelle</label>
+                            <input type="email" id="adresseEmail">
+                        </div>
+
+                        <div class="in">
+                          <label class="labelEmail" for="nomUtilisateur">Nom d'utilisateur</label>
+                            <input type="text" id="nomUtilisateur">
                         </div>
     
                         <div class="in">
@@ -62,46 +67,44 @@
                         </div>
     
                         <div class="checkB" id="checkBCheckbox">
-                            <input class="dojoxTriStateCheckBoxInput" type="checkbox" name="checkbox" id="checkbox">
-                            <label class="labelCheckBox" for="checkbox">Rester connecté</label>
+                            <div>
+                                <input class="CheckBoxInput" type="checkbox" name="checkbox" id="checkbox">
+                            </div>
+                            <div class="good">
+                                <label class="labelCheckBox" for="checkbox">
+                                    Je ne souhaite ni recevoir d'e-mails à propos de Mailchimp ou de produits Intuit 
+                                    connexes ni être informé(e) des nouvelles fonctionnalités, des bonnes pratiques 
+                                    en matière de marketing ou des promotions offertes par Mailchimp. En ne cochant 
+                                    pas la case, j'accepte d'être inscrit(e) par défaut.</label>
+                            </div>
+                        </div>
+
+                        <div class="good2">
+                            <label id="privacy"  for="checkbox">
+                                En créant un compte, vous acceptez nos <a href="https://mailchimp.com/fr/legal/terms/" target="_blank">Conditions générales</a> et reconnaissez 
+                                avoir lu et compris <a href="https://www.intuit.com/privacy/statement/fr/" target="_blank">la Déclaration de confidentialité internationale</a>.</label>
                         </div>
 
                         <div class="leftButton">
-                            <button class="buttonConnexion" type="button">Connexion</button>
+                            <button class="buttonConnexion" type="button">S'inscrire</button>
                         </div>
-                        <div class="links">
-                            <a href="#">
-                                <span class="textLink">Nom d'utilisateur oublié ?</span>
-                            </a>
-    
-                            <a href="#">
-                                <span class="textLink">Mot de passe oublié ?</span>
-                            </a>
-    
-                            <a href="#">
-                                <span class="textLink">Probleme de connexion ?</span>
-                            </a>
-                        </div>
-                        <div class="bottomDiv">
-                            <div class="messageForGoogle">
-                                <span>
-                                     Ou, si vous avez créé votre compte Mailchimp avec Google :
-                                </span>
-                             </div>
-                             <div class="googleButton">
-                                 <button>
-                                     <img src="./images/appointments-google-logo.svg" alt="">
-                                     <span>Continuer avec Google</span>
-                                 </button>
-                             </div>
-                        </div>
+                        
+                        <p class="captcha">ReCAPTCHA invisible par Google 
+                            : <a href="https://policies.google.com/privacy" target="_blank">
+                                Déclaration de confidentialité</a> 
+                            et <a href="https://policies.google.com/terms" target="_blank">Conditions d'utilisation</a>
+                        </p>
+                        <p id="captchaPlus" class="captcha">
+                            Certaines sections de Mailchimp ne sont disponibles qu'en anglais.
+                            D'autres langues seront bientôt proposées. Merci pour votre patience !
+                        </p>
                     </form>
                 </div>
                 <footer>
-                    <p class="footerText">©2024 Intuit Inc. Tous droits réservés. Mailchimp® est une marque déposée de The Rocket Science Group, 
+                    <p class="footerText">©2024 Intuit Inc. Tous droits réservés. 
+                        Mailchimp® est une marque déposée de The Rocket Science Group, 
                         <a class="lienFooter" href="#">Préférences en matière de cookies</a>, 
-                        <a class="lienFooter" href="#">Confidentialité et Conditions générales
-                        </a>
+                        <a class="lienFooter" href="https://www.intuit.com/privacy/statement/fr/" target="_blank">Confidentialité et Conditions générales</a>
                     </p>
                 </footer>
             </div>

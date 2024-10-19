@@ -8,6 +8,13 @@ header img{
     width: 38px;
     cursor: pointer;
 }
+.privacy{
+    font-size: 16px;
+}
+
+.login h1{
+    font-weight:500;
+}
 
 .content{
     background-color: #f6f6f4;
@@ -26,6 +33,7 @@ header img{
     flex-direction: row;
     color: #007c89;
     align-items: center;
+    margin-right: 8px;
     justify-content: space-evenly;
 }
 
@@ -62,7 +70,8 @@ body{
 
 .formDiv{
     margin-top: 10px;
-    padding: 40px 35px 20px 35px;
+    width: 65%;
+    padding: 40px 70px 40px 70px;
     background-color: #ffffff;
     border-radius: 12px;
     border: 1px solid rgba(36, 28, 21, 0.15);
@@ -159,7 +168,6 @@ footer{
 }
 .createAccountLink{
     display: flex;
-    flex-direction: column;
     text-align: left;
     margin: 0px 0px 19px;
 }
@@ -170,7 +178,6 @@ form label{
 }
 
 form {
-    max-width: 320px;
     background-color: #ffffff;
     max-height: fit-content;
 }
@@ -190,7 +197,13 @@ form h1{
 .checkB{
     display: flex;
     text-align: center;
-    align-items: center;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.CheckBoxInput{
+    margin-right: 16px;
+    width: 100%;
 }
 
 
@@ -214,7 +227,7 @@ input{
     font-size: 20px;
 }
 
-input[type="email"], input[type="password"]{
+input[type="email"], input[type="password"], input[type="text"]{
     min-height: 46px;
     line-height: 20px;
     padding: 0 15px;
@@ -224,10 +237,11 @@ input[type="email"], input[type="password"]{
     display: inline-block;
 }
 
-input[type="email"]:focus, input[type="password"]:focus{
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus{
     outline: none;
     border: 1px solid #007c89;
     box-shadow: inset 0 0 0 1px #007c89;
+    position: relative;
     border-left: none;
     border-top: none;
 }
@@ -288,7 +302,7 @@ input[type="checkbox"]:checked::after {
     line-height: 24px;
 }
 
-.createAccountLink a, .links a{
+.createAccountLink a, .links a, .good2 a, .captcha a{
     color: #007c89;
 }
 
@@ -333,18 +347,36 @@ input[type="checkbox"]:checked::after {
 span {
     line-height: inherit;
     padding: 0px 06px 0px 0px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .in label{
     color: #241c15;
-    font-weight: 550;
-    font-family: 'Graphik Web', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
     max-width: 635px;
     user-select: none;
 }
 .labelCheckBox{
-    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+.good, .good2{
+    text-align: left;
+}
+
+.good2{
+    margin-bottom:15px;
+}
+
+.captcha{
+    text-align: left;
+    font-size: 12px;
+    color: rgba(36, 28, 21, 0.65);
+    font-family: var(--typeface-brand, "Means Web", Georgia, Times, "Times New Roman", serif);
+}
+#captchaPlus{
+    margin: 24px 0px 12px;
 }
 
 .passwordDiv:hover{
@@ -355,7 +387,6 @@ span {
 .afficher{
     cursor: pointer;
 }
-
 
 .passwordDiv svg{
     height: 18px;
@@ -393,6 +424,9 @@ span {
     }
     .langue{
         width: auto;
+    }
+    .formDiv{
+        padding: 40px 35px 20px 35px;
     }
 }
   
